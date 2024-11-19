@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 Goto Shingo
+# SPDX-Lisence-Identifer: BSD-3-Clause
+
+import sys
+
+def count():
+    text = input("input an English sentence\n")
+    total = 0
+
+    for char in text:
+        if not char.isspace():
+            total += 1
+    print(f"{total}")
+
+count()

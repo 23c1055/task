@@ -5,8 +5,8 @@
 import sys
 
 def count():
-    text = input("input an English sentence:")
     total = 0
+    text = input("input an English sentence:")
 
     for char in text:
         if not char.isspace():

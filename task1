@@ -7,7 +7,7 @@ from collections import Counter
 
 
 input_file = "input.txt"
-with open("input.txt", "r") as f
+with open("input.txt", "r") as f:
     text = f.read().lower()
     text = unicodedata.nomalize('NFKD', text)
 

@@ -2,15 +2,40 @@
 # SPDX-FileCopyrightText: 2024 Goto Shingo
 # SPDX-Lisence-Identifer: BSD-3-Clause
 
-import sys
+import unicodedata
+from collections import Counter
 
-def count():
-    total = 0
-    text = input("input an English sentence:")
 
-    for char in text:
-        if not char.isspace():
+input_file = "input.txt"
+with open("input.txt", "r") as f
+    text = f.read().lower()
+    text = unicodedata.nomalize('NFKD', text)
+
+letter_counts = {}
+space = 0
+others = 0
+total = 0
+rate = 0
+
+for char in text:
+    if char.isalpha():
+        if char in letter_counts:
+            letter_counts[char] += 1
             total += 1
-    print(f"{total}")
+        else:
+            letter_counts[char] = 1
+            total += 1
+    elif char == ' ':
+        space += 1
+    else:
+        others +=1
 
-count()
+sorted_letters = sorted(letter_counts.items(), key = lambda item: item[1], reverse = True)
+
+for letter, count in sorted_letters:
+    rate = (count / total)*100
+    print(f"{letter}: {count}    :{rate:.2f}%")
+print(f"space:{space}")
+print(f"others:{others}")
+print(f"total:{total}")
+

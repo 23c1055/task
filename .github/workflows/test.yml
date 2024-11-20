@@ -8,4 +8,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: All test
-      run: ./task1
+      run: python3 -xv ./task1

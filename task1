@@ -5,7 +5,7 @@
 import sys
 
 def count():
-    text = input("input an English sentence\n")
+    text = input("input an English sentence:")
     total = 0
 
     for char in text:

@@ -14,6 +14,8 @@ Pythonでアルファベットをカウント
 
 ```bash
 リポジトリをクローン
-git clone 
+git clone https://github.com/23c1055/task.git
+
+ディレクトリに移動
 - このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されています。
 - 2024　Goto　Shingo

@@ -21,6 +21,7 @@ cd task
 
 依存関係をインストール
 pip install -r requirements.txt
+```
 
 - このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されています。
 - 2024　Goto　Shingo

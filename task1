@@ -10,7 +10,7 @@ from collections import Counter
 input_file = "input.txt"
 with open("input.txt", "r") as f:
     text = f.read().lower()
-    text = unicodedata.normalize('NFKD', text)
+    text = unicodedata.normalize('NFKC', text)
 
 letter_counts = {}
 space = 0

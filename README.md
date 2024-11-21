@@ -37,9 +37,11 @@ nano input.txt
 
 サンプルコード
 
-input.txtに以下を入力
+```input.txt```に以下を入力
 
 ```Thanks for applying !!```
+
+上記を行った場合の```task1```の実行結果
 
 
 

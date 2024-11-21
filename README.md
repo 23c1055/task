@@ -37,7 +37,8 @@ nano input.txt
 
 サンプルコード
 
-input.txt
+input.txtに以下を入力
+
 ```Thanks for applying !!```
 
 

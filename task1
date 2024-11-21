@@ -3,6 +3,7 @@
 # SPDX-Lisence-Identifer: BSD-3-Clause
 
 import unicodedata
+import re
 from collections import Counter
 
 
@@ -13,12 +14,12 @@ with open("input.txt", "r") as f:
 
 letter_counts = {}
 space = 0
-others = 0
+others = -1
 total = 0
 rate = 0
 
 for char in text:
-    if char.isalpha():
+    if re.findall(r'[A-Za-z]',char):
         if char in letter_counts:
             letter_counts[char] += 1
             total += 1

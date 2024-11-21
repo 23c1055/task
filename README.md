@@ -27,7 +27,7 @@ pip install -r requirements.txt
 実行方法の例
 
 ```bash
-入力ファイルを開く
+入力ファイルを開く。
 nano input.txt
 適当な英文を打ち込み、ファイル内にあるショートカットキーの案内に従い保存して終了する。
 
@@ -36,6 +36,9 @@ nano input.txt
 ```
 
 サンプルコード
+
+input.txt
+```Thanks for applying !!```
 
 
 

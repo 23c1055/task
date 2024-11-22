@@ -1,5 +1,9 @@
 # アルファベットカウンタ
 
+![GitHub stars](https://img.shields.io/github/stars/username/repository)
+![Build Status](https://img.shields.io/github/actions/workflow/status/username/repository/ci.yml?branch=main)
+
+
 Pythonでアルファベットをカウント
 
 ## 概要

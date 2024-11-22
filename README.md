@@ -3,7 +3,7 @@
 ![Downloads](https://img.shields.io/badge/Downloads-1-green)
 ![Downloads](https://img.shields.io/badge/Downloads-1.2k-green)
 ![Needed Python version](https://img.shields.io/badge/Needed_Python_version-3_or_more-blue)
-![Build Status](https://github.com/<23c1055>/<task>/actions/workflows/<task1>/badge.svg)
+![Build Status](https://github.com/23c1055/task/actions/workflows/<test.yml>/badge.svg)
 
 
 Pythonでアルファベットをカウント

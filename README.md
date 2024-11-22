@@ -43,11 +43,7 @@ nano input.txt
 
 サンプルコード
 
-```input.txt```に以下を入力
-
-```Thanks for using. ありがとう!!```
-
-上記を行った場合の```task1```の実行結果
+```input.txt```に```Thanks for using. ありがとう!!```を入力したときの```task```を実行結果
 
 ```
 n: 2    :14.29%

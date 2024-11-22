@@ -28,8 +28,7 @@ git clone https://github.com/23c1055/task.git
 cd task
 
 依存関係をインストール
-2024年11月22日現在、新たに必要な外部ライブラリは使用していませんので、requirements.txtのインストールはしなくていいです。
-pip install -r requirements.txt
+2024年11月22日現在、外部ライブラリを使用していないため、依存関係をインストールは不要です。
 ```
 ## 使い方
 

@@ -1,6 +1,7 @@
 # アルファベットカウンタ
 
 ![Build Status](https://img.shields.io/badge/Downloads-0.001k%2Fmonth-green?style=plastic&logo=downloads&logoColor=gray)
+![Downloads](https://img.shields.io/badge/Downloads-1.2k-green)
 
 ![Build Status](https://img.shields.io/github/actions/workflow/status/username/repository/ci.yml?branch=main)
 

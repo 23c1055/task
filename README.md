@@ -61,7 +61,14 @@ others:8
 total:14
 ```
 
+## 貢献
 
+貢献方法は以下の通りです。
 
+1.フォークする。
+2.新しいブランチを作成する。(```bash git checkout -b feature/YourFeature```)
+3.コードをコミットする。(```bash git commit -m "Add some feature"```)
+4.プッシュする。(```bash git push origin feature/Yourfeature```)
+5.プルリクエストを作成する。
 - このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されています。
 - 2024　Goto　Shingo

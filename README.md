@@ -1,9 +1,8 @@
 # アルファベットカウンタ
 
 ![Build Status](https://github.com/23c1055/task/actions/workflows/test.yml/badge.svg)
-![Downloads](https://img.shields.io/badge/Downloads-1-green)
 ![Needed Python version](https://img.shields.io/badge/Needed_Python_version-3_or_more-blue)
-
+![Downloads](https://img.shields.io/badge/Downloads-1-green)
 
 
 Pythonでアルファベットをカウント

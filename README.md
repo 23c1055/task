@@ -1,6 +1,7 @@
 # アルファベットカウンタ
 
-![GitHub stars](https://img.shields.io/github/stars/username/repository)
+<img alt="Static Badge" src="https://img.shields.io/badge/:badgeContent?style=plastic&logo=downloads&logoColor=gray&label=0.001k%2Fmonth&labelColor=green">
+
 ![Build Status](https://img.shields.io/github/actions/workflow/status/username/repository/ci.yml?branch=main)
 
 

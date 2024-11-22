@@ -46,7 +46,9 @@ nano input.txt
 サンプルコード
 
 ```input.txt```に
+
 ```bash Thanks for using. ありがとう!!```
+
 を入力したときの```task```の実行結果
 
 ```

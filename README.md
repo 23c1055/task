@@ -2,7 +2,7 @@
 
 ![Downloads](https://img.shields.io/badge/Downloads-1-green)
 ![Downloads](https://img.shields.io/badge/Downloads-1.2k-green)
-![Needed Python version](https://img.shields.io/badge/Python -3 or more-blue)
+![Needed Python version](https://img.shields.io/badge/Python-3ormore-blue)
 
 
 Pythonでアルファベットをカウント

@@ -75,7 +75,7 @@ total:14
 viやvimエディタでinput.txtを開き、そこに長文を貼り付けるとき、以下の不具合が生じる場合があります
 - 予期せぬフリーズ
 
-- 正しく全文を貼り付けない。全文の一部しか貼り付けられない。
+- 全文のうちの一部しか貼り付けられない。
 
 - これら不具合を避けるため、nanoエディタでinput.txtを使用することを推奨します。
 
@@ -83,15 +83,15 @@ viやvimエディタでinput.txtを開き、そこに長文を貼り付けると
 
 貢献方法は以下の通りです。
 
-1.フォークする。
+1. フォークする。
 
-2.新しいブランチを作成する。(```bash git checkout -b feature/YourFeature```)
+2. 新しいブランチを作成する。(```bash git checkout -b feature/YourFeature```)
 
-3.コードをコミットする。(```bash git commit -m "Add some feature"```)
+3. コードをコミットする。(```bash git commit -m "Add some feature"```)
 
-4.プッシュする。(```bash git push origin feature/Yourfeature```)
+4. プッシュする。(```bash git push origin feature/Yourfeature```)
 
-5.プルリクエストを作成する。
+5. プルリクエストを作成する。
  
 ## ライセンス
 

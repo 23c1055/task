@@ -16,7 +16,7 @@ Pythonでアルファベットをカウント
 
 ## テスト環境
 
-- Ubuntu 
+- Ubuntu 20.04 on Windows
 
 ## 概要
 

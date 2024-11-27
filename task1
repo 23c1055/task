@@ -2,19 +2,18 @@
 # SPDX-FileCopyrightText: 2024 Goto Shingo
 # SPDX-Lisence-Identifer: BSD-3-Clause
 
+import sys
 import unicodedata
 import re
 from collections import Counter
 
-
-input_file = "input.txt"
-with open("input.txt", "r") as f:
-    text = f.read().lower()
-    text = unicodedata.normalize('NFKC', text)
+print("Put some sentence.\nPress Ctrl+D twice, for starting analizing")
+text = sys.stdin.read()
+text = unicodedata.normalize('NFKC', text)
 
 letter_counts = {}
 space = 0
-others = -1
+others = 0
 total = 0
 rate = 0
 
@@ -29,14 +28,14 @@ for char in text:
     elif char == ' ':
         space += 1
     else:
-        others +=1
+        others += 1
 
 sorted_letters = sorted(letter_counts.items(), key = lambda item: item[1], reverse = True)
 
 for letter, count in sorted_letters:
     rate = (count / total)*100
-    print(f"{letter}: {count}    :{rate:.2f}%")
-print(f"space:{space}")
+    print(f"\n{letter}: {count}    :{rate:.2f}%", end = ' ')
+print(f"\nspace:{space}")
 print(f"others:{others}")
 print(f"total:{total}")
 

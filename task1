@@ -8,7 +8,7 @@ import re
 from collections import Counter
 
 print("Put some sentence.\nPress Ctrl+D twice, for starting analizing")
-text = sys.stdin.read()
+text = sys.stdin.read().lower()
 text = unicodedata.normalize('NFKC', text)
 
 letter_counts = {}

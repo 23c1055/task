@@ -12,6 +12,10 @@ print("文章を入力してください\n ctrl+dを2回入力して、分析を
 text = sys.stdin.read().lower()
 text = unicodedata.normalize('NFKC', text)
 
+if text == "":
+    print("何かしらの文章を入力してください")
+    sys.exit()
+
 letter_counts = {}
 space = 0
 others = 0
@@ -35,7 +39,8 @@ sorted_letters = sorted(letter_counts.items(), key = lambda item: item[1], rever
 
 print()
 for letter, count in sorted_letters:
-    print(f"{letter}:{count}")
+    rate = (count / total) *100
+    print(f"{letter}:{count}    {rate:.2f}%")
 print(f"space:{space}")
 print(f"others:{others}")
 print(f"total:{total}")

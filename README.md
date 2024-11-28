@@ -1,6 +1,6 @@
 # アルファベットカウンタ
 
-!(https://github.com/23c1055/task/actions/workflows/test.yml/badge.svg)
+![test](https://github.com/23c1055/task/actions/workflows/test.yml/badge.svg)
 <img src="https://img.shields.io/badge/-Python-F9DC3E.svg?logo=python">
 ![Needed Python version](https://img.shields.io/badge/Needed_Python_version-3_or_more-blue)
 ![Downloads](https://img.shields.io/badge/Downloads-1-green)

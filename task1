@@ -7,7 +7,8 @@ import unicodedata
 import re
 from collections import Counter
 
-print("Put some sentence.\nPress Ctrl+D twice, for starting analizing")
+print("文章を入力してください\n ctrl+dを2回入力して、分析を始めます。")
+
 text = sys.stdin.read().lower()
 text = unicodedata.normalize('NFKC', text)
 
@@ -32,10 +33,10 @@ for char in text:
 
 sorted_letters = sorted(letter_counts.items(), key = lambda item: item[1], reverse = True)
 
+print()
 for letter, count in sorted_letters:
-    rate = (count / total)*100
-    print(f"\n{letter}: {count}    :{rate:.2f}%", end = ' ')
-print(f"\nspace:{space}")
+    print(f"{letter}:{count}")
+print(f"space:{space}")
 print(f"others:{others}")
 print(f"total:{total}")
 

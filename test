@@ -1,0 +1,30 @@
+#!/bin/bash
+# SPDX-License=Identifier: BSD-3-Clause
+
+ng() {
+    echo "${1}行目が違うよ"
+    res=1
+}
+
+res=0
+
+output=$(echo "Helloh wor1d!!" | ./task1)
+
+true_output=" h:2 l:2 o:2 e:1 w:1 r:1 d:1 space:1 others:3 total:10"
+
+[ "$output" != "$true_output" ] || ng "$LINENO"
+
+change_up=0
+echo "$output" | grep -q '[A-Z]' && change_up=1
+
+
+if [ "$change_up" == 1 ]; then
+    ng "$LINENO"
+fi 
+
+
+if [ "$res" == 0 ]; then
+    echo OK
+fi
+
+exit $res

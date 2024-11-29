@@ -6,7 +6,7 @@
 ![Downloads](https://img.shields.io/badge/Downloads-2-green)
 
 
-Pythonでアルファベットをカウント
+Pythonで文字をカウント
 
 ## 必要なソフトウェア
 

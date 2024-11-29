@@ -1,4 +1,4 @@
-# アルファベットカウンタ
+# 文字カウンタ
 
 ![status](https://github.com/23c1055/task/actions/workflows/test.yml/badge.svg)
 <img src="https://img.shields.io/badge/-Python-F9DC3E.svg?logo=python">
@@ -20,7 +20,7 @@ Pythonでアルファベットをカウント
 
 ## 概要
 
-- 入力された文に出現した各アルファベットの個数や空白、その他文字をカウントします。 
+- 入力された文に出現した文字数をカウントします。 
 
 ## 使用方法
 
@@ -46,21 +46,7 @@ echo Thanks for using. ありがとう!! | ./task1
 以降が、その時の```task1```の実行結果です。
 
 ```
-n: 2    :14.29%
-s: 2    :14.29%
-t: 1    :7.14%
-h: 1    :7.14%
-a: 1    :7.14%
-k: 1    :7.14%
-f: 1    :7.14%
-o: 1    :7.14%
-r: 1    :7.14%
-u: 1    :7.14%
-i: 1    :7.14%
-g: 1    :7.14%
-space:3
-others:6
-total:14
+14
 ```
 
 ## ライセンス

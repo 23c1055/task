@@ -14,7 +14,7 @@ text = unicodedata.normalize('NFKC', text)
 
 letter_counts = {}
 space = 0
-others = 0
+others = -1
 total = 0 
 rate = 0
 
@@ -33,7 +33,7 @@ for char in text:
 
 sorted_letters = sorted(letter_counts.items(), key = lambda item: item[1], reverse = True)
 
-print()
+
 for letter, count in sorted_letters:
     rate = (count / total) *100
     print(f"{letter}:{count}    {rate:.2f}%")

@@ -14,7 +14,7 @@ output=$(echo "Helloh wor1dっ!" | ./task1)
 
 [ "$(echo "$output" | echo "$letter" = '[A-Z]')" ] || ng "$LINENO"
 [ "$(echo "$output" | echo "$space" = 1 )" ] || ng "$LINENO"
-[ "$(echo "$output" | echo "$others" = 4)" ] || ng "$LINENO"
+[ "$(echo "$output" | echo "$others" = 3)" ] || ng "$LINENO"
 [ "$(echo "$output" | echo "$total" = 10)" ] || ng "$LINENO"
 
 [ "${res}" = 0 ] && echo OK

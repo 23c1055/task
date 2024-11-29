@@ -25,14 +25,7 @@ total=$(echo "$output" | grep -o 'total:[^[:space:]]*' | sed 's/total://')
 [ "$total" -eq 10 ] || ng "$LINENO"
 
 
-<<<<<<< HEAD
 [ "$res" = 0 ] && echo "OK"
-
-=======
-if [ "$res" -eq 0 ]; then
-    echo "OK"
-fi
->>>>>>> 0f427b80824445b3e35fe71e67b9d04ca2f5a11f
 
 exit $res
 

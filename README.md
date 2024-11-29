@@ -59,7 +59,7 @@ u: 1    :7.14%
 i: 1    :7.14%
 g: 1    :7.14%
 space:3
-others:7
+others:6
 total:14
 ```
 

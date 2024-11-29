@@ -8,7 +8,7 @@ text = sys.stdin.read()
 
 total = 0 
 for char in text:
-    if char == ' ' or char == '\n':
+    if char.isspace():
         continue
     else:
         total += 1

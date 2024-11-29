@@ -3,10 +3,6 @@
 # SPDX-Lisence-Identifer: BSD-3-Clause
 
 import sys
-import unicodedata
-import re
-from collections import Counter
-
 
 text = sys.stdin.read()
 

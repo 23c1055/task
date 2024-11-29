@@ -8,7 +8,7 @@ import re
 from collections import Counter
 
 
-text = sys.stdin.read()
+text = sys.stdin.read().lower()
 text = unicodedata.normalize('NFKC', text)
 
 

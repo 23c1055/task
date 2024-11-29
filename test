@@ -9,17 +9,18 @@ ng() {
 
 res=0
 
-stderr_output=$(echo "Helloh wor1dっ!" | ./task1 2>&1 1>/dev/null)
+output=$(echo Hello w0r1d | ./counter)
 
-space=$(echo "$stderr_output" | grep -o 'space:[0-9]*' | cut -d':' -f2)
-others=$(echo "$stderr_output" | grep -o 'others:[0-9]*' | cut -d':' -f2)
-total=$(echo "$stderr_output" | grep -o 'total:[0-9]*' | cut -d':' -f2)
+if [ "$output" -lt 10 ]; then
+    ng "$LINENO"
+    echo "less counted" 
+fi
 
-[ "$space" = 1 ] || ng "$LINENO"
-[ "$others" = 3 ] || ng "$LINENO"
-[ "$total" = 10 ] || ng "$LINENO"
+if [ "$output" -gt 10 ]; then
+    ng "$LINENO"
+    echo "over counted"
+fi
 
 [ "$res" = 0 ] && echo OK
 
 exit $res
-

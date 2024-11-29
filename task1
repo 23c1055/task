@@ -31,6 +31,10 @@ for char in text:
     else:
         others += 1
 
+print(f"space:{space}", file=sys.stderr)
+print(f"others:{others}", file=sys.stderr)
+print(f"total:{total}", file=sys.stderr)
+
 sorted_letters = sorted(letter_counts.items(), key = lambda item: item[1], reverse = True)
 
 

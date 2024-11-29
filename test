@@ -9,23 +9,17 @@ ng() {
 
 res=0
 
-output=$(echo "Helloh wor1dっ!" | ./task1)
+stderr_output=$(echo "Helloh wor1dっ!" | ./task1 2>&1 1>/dev/null)
 
-if echo "$output" | grep -q '[A-Z]'; then
-	ng "$LINENO"
-fi
+space=$(echo "$stderr_output" | grep -o 'space:[0-9]*' | cut -d':' -f2)
+others=$(echo "$stderr_output" | grep -o 'others:[0-9]*' | cut -d':' -f2)
+total=$(echo "$stderr_output" | grep -o 'total:[0-9]*' | cut -d':' -f2)
 
-space=$(echo "$output" | grep -o 'space:[^[:space:]]*' | sed 's/space://')
-[ "$space" -eq 1 ] || ng "$LINENO"
+[ "$space" = 1 ] || ng "$LINENO"
+[ "$others" = 3 ] || ng "$LINENO"
+[ "$total" = 10 ] || ng "$LINENO"
 
-others=$(echo "$output" | grep -o 'others:[^[:space:]]*' | sed 's/others://')
-[ "$others" -eq 3 ] || ng "$LINENO"
-
-total=$(echo "$output" | grep -o 'total:[^[:space:]]*' | sed 's/total://')
-[ "$total" -eq 10 ] || ng "$LINENO"
-
-
-[ "$res" = 0 ] && echo "OK"
+[ "$res" = 0 ] && echo OK
 
 exit $res
 

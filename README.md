@@ -43,7 +43,7 @@ chmod +x task1
 ```bash
 echo Thanks for using. ありがとう!! | ./task1
 ```
-以降が、その時の```task```の実行結果です。
+以降が、その時の```task1```の実行結果です。
 
 ```
 n: 2    :14.29%

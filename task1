@@ -7,19 +7,15 @@ import unicodedata
 import re
 from collections import Counter
 
-print("文章を入力してください\n ctrl+dを2回入力して、分析を始めます。")
 
 text = sys.stdin.read().lower()
 text = unicodedata.normalize('NFKC', text)
 
-if text == "":
-    print("何かしらの文章を入力してください")
-    sys.exit()
 
 letter_counts = {}
 space = 0
 others = 0
-total = 0
+total = 0 
 rate = 0
 
 for char in text:

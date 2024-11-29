@@ -1,5 +1,6 @@
 #!/bin/bash
-# SPDX-License=Identifier: BSD-3-Clause
+# SPDX-FileCopyrightText: 2024 Goto Shingo
+# SPDX-License-Identifier: BSD-3-Clause
 
 ng() {
     echo "${1}行目が違うよ"
@@ -13,7 +14,7 @@ output=$(echo "Helloh wor1dっ!" | ./task1)
 
 echo "$output" | grep -q '[A-Z]' && ng "$LINENO"
 echo "$output" | grep -q 'space:1' || ng "$LINENO"
-echo "$output" | grep -q 'others:4'|| ng "$LINENO"
+echo "$output" | grep -q 'others:4' || ng "$LINENO"
 echo "$output" | grep -q 'total:10' || ng "$LINENO"
 
 [ "$res" = 0 ] && echo OK

@@ -1,0 +1,24 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 Goto Shingo
+# SPDX-Lisence-Identifer: BSD-3-Clause
+
+import sys
+import unicodedata
+import re
+from collections import Counter
+
+
+text = sys.stdin.read()
+
+
+letter_counts = {}
+total = 0 
+
+for char in text:
+    if char == ' ' or char == '\n':
+        continue
+    else:
+        total += 1
+
+print(f"{total}")
+

@@ -34,14 +34,14 @@ git clone https://github.com/23c1055/task.git
 cd task
 
 権限の付与
-chmod +x task1
+chmod +x counter
 ```
 
 
 
 実行方法の例
 ```bash
-echo Thanks for using. ありがとう!! | ./task1
+echo Thanks for using. ありがとう!! | ./counter
 ```
 以降が、その時の```task1```の実行結果です。
 

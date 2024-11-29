@@ -6,10 +6,7 @@ import sys
 
 text = sys.stdin.read()
 
-
-letter_counts = {}
 total = 0 
-
 for char in text:
     if char == ' ' or char == '\n':
         continue

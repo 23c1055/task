@@ -44,7 +44,7 @@ $ chmod +x counter
 ```bash
 $ echo Thanks for using. ありがとう!! | ./counter
 ```
-以降が、その時の```task1```の実行結果です。
+以降が、その時の```counter```の実行結果です。
 
 ```
 $ 20

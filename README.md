@@ -28,20 +28,20 @@ Pythonで文字をカウント
 
 ```bash
 リポジトリをクローン
-git clone https://github.com/23c1055/task.git
+$ git clone https://github.com/23c1055/task.git
 
 ディレクトリに移動
-cd task
+$ cd task
 
 権限の付与
-chmod +x counter
+$ chmod +x counter
 ```
 
 
 
 実行方法の例
 ```bash
-echo Thanks for using. ありがとう!! | ./counter
+$ echo Thanks for using. ありがとう!! | ./counter
 ```
 以降が、その時の```task1```の実行結果です。
 

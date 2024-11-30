@@ -10,13 +10,14 @@ ng() {
 res=0
 
 output=$(echo Hello w0r1d | ./counter)
+true_count=10
 
-if [ "$output" -lt 10 ]; then
+if [ "$output" -lt "$true_count" ]; then
     ng "$LINENO"
     echo "less counted" 
 fi
 
-if [ "$output" -gt 10 ]; then
+if [ "$output" -gt "$true_count" ]; then
     ng "$LINENO"
     echo "over counted"
 fi
